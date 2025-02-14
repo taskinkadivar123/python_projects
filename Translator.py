@@ -12,7 +12,7 @@ root = Tk()
 root.title("Language Translator")
 root.geometry("1080x400")
 
-fontAwesome = tkFont.Font(family=r"D:\Python\BackUp\FontAwesome.ttf", size=16)
+fontAwesome = tkFont.Font(family=r"D:\Python\projects\FontAwesome.ttf", size=16)
 
 engine = pyttsx3.init()
 
@@ -34,7 +34,6 @@ def speak_text2():
     if text_:
         engine.say(text_)  
         engine.runAndWait()
-
 
 # def speak_text():
 #     text1_ = text1.get(1.0, END).strip()  
@@ -82,10 +81,9 @@ def copy_to_clipboard(text_widget):
         
 
 
-#icon
+
 image_icon = PhotoImage(file="translate.png")
 root.iconphoto(False,image_icon)
-
 
 language = googletrans.LANGUAGES
 languageV = list(language.values())
@@ -147,6 +145,7 @@ scrollbar2.pack(side="right",fill="y")
 
 scrollbar2.configure(command=text2.yview)
 text2.configure(yscrollcommand=scrollbar2.set)
+
 
 
 translate = Button(root,text="\uf0ec", width=4,height=2, font=fontAwesome,  activebackground="black", activeforeground="white",cursor="hand2",bd=5,bg="grey",fg="black",command= translate_now)
