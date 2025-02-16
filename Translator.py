@@ -3,6 +3,7 @@ from tkinter import ttk,messagebox
 import googletrans
 import pyttsx3
 import tkinter.font as tkFont
+# import tkinter as tk
 import tkinter as tk
 
 
