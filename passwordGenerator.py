@@ -40,4 +40,4 @@ Entry(root, textvariable=passstr).pack(pady=7)
 
 Button(root, text="Copy to clipboard", command=copytoclipboard).pack()
 
-root.mainloop()
+root.mainloop(
