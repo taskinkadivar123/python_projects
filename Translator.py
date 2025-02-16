@@ -1,11 +1,9 @@
 from tkinter import *
 from tkinter import ttk,messagebox
 import googletrans
-import textblob
 import pyttsx3
 import tkinter.font as tkFont
 import tkinter as tk
-import pyperclip 
 
 
 root = Tk()
@@ -34,18 +32,6 @@ def speak_text2():
     if text_:
         engine.say(text_)  
         engine.runAndWait()
-
-# def speak_text():
-#     text1_ = text1.get(1.0, END).strip()  
-#     text2_ = text2.get(1.0, END).strip()  
-
-#     if text2_:  
-#         engine.say(text2_)  
-#     elif text1_:  
-#         engine.say(text1_) 
-    
-#     engine.runAndWait()  
-
 
 def translate_now():
     global language
