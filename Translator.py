@@ -5,7 +5,6 @@ import pyttsx3
 import tkinter.font as tkFont
 import tkinter as tk
 
-
 root = Tk()
 root.title("Language Translator")
 root.geometry("1080x400")
@@ -13,6 +12,7 @@ root.geometry("1080x400")
 fontAwesome = tkFont.Font(family=r"D:\Python\projects\FontAwesome.ttf", size=16)
 
 engine = pyttsx3.init()
+
 
 def label_change():
     c=combo1.get()
@@ -25,7 +25,7 @@ def speak_text():
     text_ = text1.get(1.0, END) 
     if text_:
         engine.say(text_)  
-        engine.runAndWait()    
+        engine.runAndWait()        
         
 def speak_text2():
     text_ = text2.get(1.0, END).strip()  
@@ -65,6 +65,7 @@ def copy_to_clipboard(text_widget):
     except Exception as e:
         messagebox.showerror("Error", f"Failed to copy text: {str(e)}")               
         
+
 
 
 
