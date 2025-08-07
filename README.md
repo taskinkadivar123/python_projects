@@ -8,14 +8,14 @@ A GUI-based language translator built using `tkinter` and a translation API like
 - Using external libraries for translation  
 - Handling user input and dropdown selections
   
-### 2. Password Generator (passwordgenerator.py)
+### 2. Password Generator (passwordGenerator.py)
 A simple tool to generate strong, random passwords. Users can choose the length of the password and generate a secure combination of characters.
 **What I learned:**  
 - Using Python's `random` and `string` libraries  
 - Working with GUI elements  
 - String manipulation and user input  
 
-### 3. Attendance System (attendance_system.py)
+### 3. Attendance System (attendanceSystem.py)
 An attendance tracker using Python and `OpenCV`. It detects faces via webcam and marks attendance in a CSV file, with timestamps.
 
 **What I learned:** 
